@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    color: white;
+    padding: --0;
+}
+
+body {
+    background-color: black;
+}
+
+.navbar {
+    width: 24vw;
+}
+
+.nav1 {
+    padding: 10px 0 10px 0;
+    background: #191919;
+    ;
+    margin-bottom: 6px;
+}
+
+.nav2 {
+    height: 58vh;
+    overflow-y: scroll;
+    background: #191919;
+
+}
+
+body {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav3 {
+    position: fixed;
+    height: 3.4vh;
+    width: 72vw;
+    z-index: 2;
+    margin-bottom: 6px;
+    background-color: #191919;
+    ;
+    padding: 18px 0 18px 34px;
+}
+
+.mainContent {
+    height: 76vh;
+    margin-bottom: 6px;
+    overflow-y: scroll;
+
+}
+
+.contentarea {
+    width: 75vw;
+}
+
+.musicPlayer {
+    position: fixed;
+    width: 75vw;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 76px;
+    background-color: #031d1a;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.arrows {
+    font-weight: bold;
+}
+
+.accountSetup {
+    float: right;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    bottom: 12px;
+    margin-right: 16px;
+}
+
+.login {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: black;
+
+}
+
+.heading {
+    margin-top: 50px;
+    position: relative;
+    top: 40px;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: wheat;
+
+}
+
+
+.boxes {
+    background-color: #434343;
+    ;
+    /* display: inline-block; */
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+
+
+}
+
+img {
+    height: 160px;
+    width: 160px;
+    object-fit: contain;
+}
+
+.songContiners {
+    margin-top: 32px;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#icon {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    padding: .5vw;
+}
+
+.navIcons {
+    height: 16px;
+    width: 21px;
+}
+
+.siteName {
+    position: relative;
+    bottom: 13px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.musicIcon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+.songDetails {
+    padding: 10px;
+    margin-top: 14px;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 32px 0px 10px 0px;
+}
+
+.songNameInSeekPlayer {
+    width: 85px;
+    text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    font-size: .77rem;
+
+}
+
+.songName {
+    color: wheat;
+    display: inline-block;
+    font-size: .8rem;
+}
+
+.forMobile {
+    display: none;
+}
+
+@media screen and (max-width:750px) {
+    body {
+        background-color: #000000eb;
+    }
+
+    .forDesktop {
+        display: none;
+    }
+
+    .forMobile {
+        display: block;
+    }
+
+    .navbar {
+        top: 90vh;
+        height: 101vh;
+        width: 94vw;
+        position: absolute; 
+  }
+  .nav2{
+    height: 66vh;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+  .links{
+    height: 13vh;
+    background: black;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+  }
+  .nav1{
+    display: none;
+  }
+
+    .contentarea {
+        width: 90vw;
+    }
+
+    .nav3 {
+        background-color: black;
+        top: 0;
+        left: 0;
+        width: 95vw;
+
+
+    }
+
+    .musicPlayer {
+        width: 100vw;
+        left: 0;
+    }
+
+    .musicTimeRange {
+        position: relative;
+        left: 11vw;
+    }
+
+    .playPauseBtn {
+        position: relative;
+        left: 2vw;
+        top: 5px;
+    }
+
+    #volRange {
+        min-width: 53px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:501px) {
+    .nav3 {
+        width: 92vw;
+        left: 0;
+    }
+
+    .timeDetails {
+        font-size: .8rem;
+    }
+
+    .playPauseBtn {
+        position: relative;
+        left: -4vw;
+        top: 3px;
+    }
+
+    .playerImg {
+        transform: scale(.6);
+        padding: 0;
+    }
+
+    .volForMobile {
+        position: absolute;
+        right: 6px;
+        bottom: 1px;
+    }
+
+
+}
+
+.library {
+    padding: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+}
+
+.Playbtn {
+    height: 10px;
+    width: 10px;
+}
+
+.play {
+    font-size: 11px;
+    float: right;
+    position: relative;
+    top: 5px;
+    color: white;
+}
+
+ul {
+    background: grey;
+}
+
+li {
+
+    list-style-type: none;
+    float: left;
+    font-size: .8rem;
+    position: relative;
+    right: 34px;
+    margin-top: 20px;
+    margin-left: 12px;
+    text-decoration: none;
+
+}
+
+.playerImg {
+    height: 30px;
+    width: 30px;
+    padding-left: 1vw;
+    cursor: pointer;
+}
+
+.volIcon {
+    height: 20px;
+    width: 20px;
+}
+
+.playerElements {
+    padding: 10px;
+}
+
+.seekBar {
+    position: relative;
+    bottom: 6px;
+}
+
+.musicTimeRange {
+    width: 73vw;
+}
+
+#volRange {
+    width: 5vw;
+}
+
+.vol {
+    /* position: relative;
+  top: 5px; */
+    padding: 0 0px 0 5px;
+    /* left: 5px; */
+}
+
+.ArtistBoxes {
+    border-radius: 50%;
+}
+
+
+.spotifyMobileIcon {
+    height: 120px;
+    width: 120px;
+    position: relative;
+    object-fit: contain;
+    left: -22px;
+    top: -63px;
+}
+
+.nav3Elements {
+    float: right;
+    padding: 7px 15px 7px 15px;
+    position: relative;
+    bottom: 8px;
+}
+
+.open-app {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 20px;
+}
+
+.mainContent::-webkit-scrollbar,
+.songContiners::-webkit-scrollbar,
+.nav2::-webkit-scrollbar {
+    display: none;
+}

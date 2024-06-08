@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- insering top-left navbar -->
+        <div class="nav1">
+            <img src="icon.png" alt="" id="icon"><span class="siteName">Spotify</span>
+
+            <div class="home"><img src="home.png" alt="" class="home navIcons">Home</div>
+            <div class="search"><img src="search-icon.png" alt="" class="search navIcons">Search</div>
+        </div>
+ 
+        <!-- inserting songss navbar -->
+        <div class="nav2">
+            <div class="library">
+                <h3 class="libraryTag">Your Library</h3>
+                <!-- to understand the libraryFunc function in javascipt -->
+                <!-- <div class="songDetails"><img src="musicIcon.png" alt="" class="musicIcon"><span class="songName">Jai Shree hello world</span><span class="play">Play Now <img src="play.png" alt="" class="Playbtn"></span></div> -->
+            </div>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li>legal</li>
+                <li>privacy policy</li>
+                <li>about</li>
+                <li>Contact us</li>
+                <li>&copy; 2024-25&nbsp; open.spotify.com</li>
+          
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <!-- Right content area -->
+    <div class="contentarea">
+        <div class="nav3">
+            <!-- navbar for desktop -->
+            <div class="forDesktop">
+
+                <span class='arrows'>
+                    < &nbsp;</span> <span class="arrows">&nbsp; > </span>
+                        <div class="accountSetup login">login</div>
+                        <div class="accountSetup signUp">sign up</div>
+            </div>
+
+            <!-- navbar for mobiles and tablets -->
+            <div class="forMobile">
+                <span><img src="spotifyMobile.png" class="spotifyMobileIcon" alt=""></span>
+                <div class="hamburger nav3Elements"><img src="hamburger.png" class="navIcons" alt=""></div>
+                <div class="open-app nav3Elements">Open App</div>
+                <div class="nav3Elements"><img class="navIcons" src="search-icon.png" alt=""></div>
+            </div>
+        </div>
+
+        <!-- songs adding in the content section -->
+        <div class="mainContent">
+            <!-- Artists -->
+            <h3 class="heading">Artists</h3>
+            <div class="artistName songContiners">
+                <!-- this is used for creating the javascriipt function "playlists" -->
+                <!-- <div class="boxes"><img src="icon.jpg" alt=""><h4>Pritam</h4><p>Artist</p></div> -->
+            </div>
+
+            <!-- Albums -->
+            <h3 class="heading">Albums</h3>
+            <div class="albums songContiners"></div>
+
+            <!-- newRelease -->
+            <h3 class="heading">New Release</h3>
+            <div class="newRelease songContiners"></div>
+
+            <!-- newRelease2 -->
+            <h3 class="heading">New Release</h3>
+            <div class="newRelease2 songContiners"></div>
+        </div>
+
+        <!-- Insering the music player -->
+        <div class="musicPlayer">
+
+            <div class="songNameInSeekPlayer playerElements">Haan Tu Hain</div>
+            <div class="playPauseBtn">
+                <span><img class="playerImg backward" src="fb2.png" alt=""></span>
+                <span><img class="playerImg playPause" src="play.png" alt=""></span>
+                <span><img class="playerImg forward" src="fb.png" alt=""></span>
+            </div>
+
+            <div class="volDetails playerElements">
+                <span class="timeDetails"><span class="musicCurrentTime">0:0</span>/<span
+                        class="musicDuration">00:00</span>
+                </span>
+                <span class="vol volForMobile">
+                    <span><img class="volIcon" src="soundIcon.png" alt=""></span>
+                    <input type="range" value="50" min="0" max="100" id="volRange">
+                </span>
+            </div>
+            <div class="seekBar playerElements"><input type="range" name="seek" class="musicTimeRange" value="0" min="0"
+                    max="1000"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
